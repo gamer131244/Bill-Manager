@@ -1,5 +1,10 @@
-import { OptionList } from '/OptionList.js';
 
+
+alert("Script Work But Import Not Work");
+
+import { OptionList } from './OptionList.js';
+
+alert("Work Script3");
 
 document.querySelector(".menu-icon span").addEventListener("click", () => {
   var img = document.querySelector(".menu-icon span img");
@@ -9,9 +14,9 @@ document.querySelector(".menu-icon span").addEventListener("click", () => {
   setTimeout(() => {
     img.style.transform = "scale(1)";
     if (img.src.includes("menu.svg")) {
-      img.src = `/x.svg`;
+      img.src = `./x.svg`;
     } else {
-      img.src = "/menu.svg";
+      img.src = "./menu.svg";
     }
   }, 100);
   
@@ -35,11 +40,11 @@ document.querySelector(".size-project-icon span").addEventListener("click", () =
           card.style.width = "40vw";
         });
       } else {
-        img.src = `grid.svg`;
+        img.src = `./grid.svg`;
         console.log(parent.children.length > 1)
       }
     } else {
-      img.src = "/grid.svg";
+      img.src = "./grid.svg";
       document.querySelectorAll(".project-card").forEach((card) => {
         card.style.width = "90vw";
       });
