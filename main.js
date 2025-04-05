@@ -1,10 +1,7 @@
 
-
-alert("Script Work But Import Not Work");
-
 import { OptionList } from './OptionList.js';
 
-alert("Work Script3");
+
 
 document.querySelector(".menu-icon span").addEventListener("click", () => {
   var img = document.querySelector(".menu-icon span img");
